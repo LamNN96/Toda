@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TodaSupportWeb.Models.RequestViewModels>
+
+@{
+    ViewBag.Title = "RequestList";
+    Layout = "~/Views/Shared/_Layout-Support.cshtml";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+    <link href="~/Content/table-view.css" rel="stylesheet" type="text/css" />
+</head>
+<table class="table-fill">
+    <thead>
+        <tr>
+            <th class="text-left;" width="175px">
+                @Html.DisplayNameFor(model => model.ThoiGian)
+            </th>
+            <th class="text-left" width="200px">
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+
+            <th class="text-left">
+                @Html.DisplayNameFor(model => model.Value)
+            </th>
+            <th width="45px"></th>
+        </tr>
+    </thead>
+    <tbody class="table-hover">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="padding-left:10px;">
+                    @Html.DisplayFor(modelItem => item.ThoiGian)
+                </td>
+                <td style="padding-left:10px;">
+                    @Html.HiddenFor(modelItem => item.ID)
+                    @Html.DisplayFor(modelItem => item.Subject)
+                </td>
+
+                <td style="padding-left:10px;">
+                    @Html.DisplayFor(modelItem => item.Value)
+                </td>
+                <td style="padding-right:5px;padding-left:8px">
+                    @Html.ActionLink("Xem", "Details", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

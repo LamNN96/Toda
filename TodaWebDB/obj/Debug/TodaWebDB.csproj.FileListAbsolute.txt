@@ -1,0 +1,20 @@
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\TodaWebDB.dll.config
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\TodaWebDB.dll
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\TodaWebDB.pdb
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.dll
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.xml
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\obj\Debug\TodaWebDB.csprojResolveAssemblyReference.cache
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\obj\Debug\TodaWebDB.dll
+c:\users\minh bui quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\obj\Debug\TodaWebDB.pdb
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\TodaWebDB.dll.config
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\TodaWebDB.dll
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\TodaWebDB.pdb
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.dll
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.xml
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\obj\Debug\TodaWebDB.csprojResolveAssemblyReference.cache
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\obj\Debug\TodaWebDB.dll
+C:\Users\Jungb\Documents\Visual Studio 2017\Projects\TodaSupportWeb\TodaWebDB\obj\Debug\TodaWebDB.pdb

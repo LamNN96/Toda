@@ -1,0 +1,77 @@
+﻿@model TodaSupportWeb.Models.RequestViewModels
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout-Support.cshtml";
+}
+@if (TempData["Success"] != null)
+{
+    <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+}
+
+@using (Html.BeginForm("Index", "Request", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+   
+                    <div class="well">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.PhongBan, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.PhongBan, new SelectList(ViewBag.PhongBan, "ID", "Value"), "Phòng ban", htmlAttributes: new { @class = "form-control", @style = "width: 600px" })
+                                @Html.ValidationMessageFor(model => model.PhongBan, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Value, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(model => model.Value, new { @class = "form-control", @rows = "6", @id = "noidung", @name = "noidung" })
+                                @*<script type="text/javascript"> CKEDITOR.replace('noidung'); </script>*@
+                                @Html.ValidationMessageFor(model => model.Value, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <label for="file">File đính kèm</label>
+                            </div>
+                            <div class="col-md-10" style="margin-top: 7px;">
+                                <input type="file" name="imgs" multiple />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+               
+
+}
+
+@section scripts {
+    <script>
+        $(function () {
+            $('#fileUpload').fileupload({
+                dataType: 'json',
+                done: function (e, data) {
+                    $.each(data.result.files, function (index, file) {
+                        $('<p />').text(file.name).appendTo(document.body);
+                    });
+                }
+            });
+        });
+    </script>
+}

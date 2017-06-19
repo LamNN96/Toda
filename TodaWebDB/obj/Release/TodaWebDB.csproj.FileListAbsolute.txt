@@ -1,0 +1,10 @@
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\TodaWebDB.dll.config
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\TodaWebDB.dll
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\TodaWebDB.pdb
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\EntityFramework.dll
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\EntityFramework.xml
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\obj\Release\TodaWebDB.dll
+C:\Users\Minh Bui Quang\documents\visual studio 2015\Projects\TodaSupportWeb\TodaWebDB\obj\Release\TodaWebDB.pdb
+C:\Users\Minh Bui Quang\Documents\Visual Studio 2015\Projects\TodaSupportWeb\TodaWebDB\obj\Release\TodaWebDB.csprojResolveAssemblyReference.cache

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Toda</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Content/ckeditor/ckeditor.js" type="text/javascript"></script>
+    @{TodaWebDB.UserWeb user = (TodaWebDB.UserWeb)(Session["User"]);}
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Toda", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Hỗ trợ", "Index", "Request")</li>
+                    <li>@Html.ActionLink("Dịch vụ", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Tài khoản", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Liên hệ", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container body-content">
+        <div class="form-horizontal">     
+            <h2>Hỗ trợ</h2>
+            <hr />       
+            <div class="row">
+                <div class="col-lg-9">
+                    <div id="section">
+
+                        @RenderBody()
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#567ccb;  padding: 1px 15px">@*<a href="#" class="pull-right">View all</a>*@ <h4 style="color:#FFFFFF;font-size:14px;font-weight:bold;">Hỗ trợ</h4></div>
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="@Url.Content("~/Request/")" class="list-group-item">Gửi yêu cầu</a>
+                                <a href="@Url.Content("~/Request/RequestList/" + user.ID)" class="list-group-item">Yêu cầu đã gửi</a>
+                                <a href="@Url.Content("~/Request/ChuaXuLy/" + user.ID)" class="list-group-item">Yêu chưa xử lý</a>
+                                <a href="@Url.Content("~/Request/DaXuLy/" + user.ID)" class="list-group-item">Yêu cầu đã xử lý</a>
+                                <a href="#" class="list-group-item">Phiếu đang xử lý</a>
+                                <a href="#" class="list-group-item">Phiếu đã xử lý</a>
+                            </div>
+                        </div><!--/panel-body-->
+                    </div><!--/panel-->
+                </div>          
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Toda</p>
+        </footer>
+    </div>
+
+                    @Scripts.Render("~/bundles/jquery")
+                    @Scripts.Render("~/bundles/bootstrap")
+                    @RenderSection("scripts", required: false)
+</body>
+</html>
